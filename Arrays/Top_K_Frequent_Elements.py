@@ -21,9 +21,11 @@ class Solution(object):
         # --OPTIMAL SOLUTION:
         counts = {}
 
+        # Make a frequency map
         for n in nums:
             counts[n] = counts.get(n, 0) + 1
 
+        # INFO: freq is a list of lists where freq[i] contains numbers with frequency i
         freq = [[] for i in range(len(nums) + 1)]
 
         for num, count in counts.items():

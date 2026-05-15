@@ -31,7 +31,7 @@ class Solution(object):
 # Explanation (For OPTIMAL):
 # - Use hashing
 #   1. Iterate through array (i)
-#   2. Check if target - a exists in map (which means already iterated through in loop)
+#   2. Check if (target - a) exists in map (which means already iterated through in loop)
 #   3.1. IF exists: simply append in result array and return
 #   3.2. ELSE (not exists): append number (a) in dict and continue
 #       - So that when it's time for (b) in loop, we can retrieve (a) as it exists

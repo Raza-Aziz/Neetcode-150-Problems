@@ -29,8 +29,8 @@ class Solution:
         if n in fibd:
             return fibd[n]
 
-        n_1 = self.fib(n - 1, fibd)
-        n_2 = self.fib(n - 2, fibd)
+        n_1 = self.fib_recursive(n - 1, fibd)
+        n_2 = self.fib_recursive(n - 2, fibd)
         result = n_1 + n_2
 
         fibd[n] = result
